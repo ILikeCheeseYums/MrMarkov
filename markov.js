@@ -24,6 +24,10 @@ function setup() {
   }
 }
 
+export function saver(input){
+    fs.appendFileSync('corpus.txt', input, 'utf8');
+}
+
 export function run() {
     setup();
   let currentGram = text.substring(0, order);

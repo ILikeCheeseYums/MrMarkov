@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 import { Client, GatewayIntentBits } from 'discord.js';
-import { run } from './markov.js';
+import { run, saver } from './markov.js';
 
 dotenv.config()
 
@@ -16,9 +16,10 @@ client.login(process.env.DISCORD_TOKEN);
 
 client.on("messageCreate", (message)=>{
     if (!message.author.bot) {
-        if(Math.random() < 0.05){
+        saver(message.content+"\n")
+        if(Math.random() < 0.5){
             let out= run();
-            console.log(out,"\n")
+            console.log(out," ");
          message.channel.send(`${out}`);
         }
     }
