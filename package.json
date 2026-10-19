@@ -1,0 +1,16 @@
+{
+  "name": "mrmarkov",
+  "version": "1.0.0",
+  "description": "A bot which takes in previous user inputs and makes new inputs with markov chains",
+  "license": "ISC",
+  "author": "Shwetank",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^18.0.8"
+  }
+}
