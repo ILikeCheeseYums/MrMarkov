@@ -12,12 +12,13 @@ const text = fs.readFileSync(filePath, 'utf8');
 let maxLen = 250;
 const order = 5;
 let ngrams = {};
+
 function setup() {
   for (let i = 0; i <= text.length - order; ++i) {
     let gram = text.substring(i, i + order);
     if (!ngrams[gram]) {
       ngrams[gram] = [];
-    }
+    } 
     if (i + order < text.length) {
       ngrams[gram].push(text.charAt(i + order));
     }

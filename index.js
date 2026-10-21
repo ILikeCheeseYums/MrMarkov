@@ -16,7 +16,7 @@ client.login(process.env.DISCORD_TOKEN);
 
 client.on("messageCreate", (message)=>{
     if (!message.author.bot) {
-        saver(message.content+"\n")
+        saver(message.content+" ")
         if(Math.random() < 0.5){
             let out= run();
             console.log(out," ");
