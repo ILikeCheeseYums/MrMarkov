@@ -1,4 +1,4 @@
-# mrmarkov
+# MrMarkov
 
 A Discord bot that reads messages from your server, saves them to a text file, and generates random replies using a 5th-order character Markov chain
 
